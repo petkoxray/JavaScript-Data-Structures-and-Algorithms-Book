@@ -1,4 +1,4 @@
-export default class Dictionary {
+class Dictionary {
     constructor() {
         this._items = {};
     }
@@ -60,3 +60,5 @@ export default class Dictionary {
         return this._items;
     }
 }
+
+module.exports = {Dictionary}

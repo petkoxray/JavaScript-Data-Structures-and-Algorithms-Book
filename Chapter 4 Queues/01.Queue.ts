@@ -1,7 +1,7 @@
-export default class Queue<T>
+class Queue<T>
 {
     private items: Array<T>;
-    
+
     constructor() {
         this.items = Array<T>();
     }

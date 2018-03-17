@@ -1,19 +1,22 @@
-let dictionary = new Dictionary();
+let D = require('../Chapter 6 HashTable/Dictionary');
+let Dictionary = D.Dictionary;
 
-dictionary.set('Gandalf', 'gandalf@email.com');
-dictionary.set('John', 'johnsnow@email.com');
-dictionary.set('Tyrion', 'tyrion@email.com');
+let dict = new Dictionary();
 
-console.log(dictionary.has('Gandalf'));   //outputs true
-console.log(dictionary.Size);   //outputs 3
+dict.set('Gandalf', 'gandalf@email.com');
+dict.set('John', 'johnsnow@email.com');
+dict.set('Tyrion', 'tyrion@email.com');
 
-console.log(dictionary.keys()); //outputs ["Gandalf", "John", "Tyrion"]
-console.log(dictionary.values()); //outputs ["gandalf@email.com", "johnsnow@email.com", "tyrion@email.com"]
-console.log(dictionary.get('Tyrion')); //outputs tyrion@email.com
+console.log(dict.has('Gandalf'));   //outputs true
+console.log(dict.Size);   //outputs 3
 
-dictionary.delete('John');
+console.log(dict.keys()); //outputs ["Gandalf", "John", "Tyrion"]
+console.log(dict.values()); //outputs ["gandalf@email.com", "johnsnow@email.com", "tyrion@email.com"]
+console.log(dict.get('Tyrion')); //outputs tyrion@email.com
 
-console.log(dictionary.keys()); //outputs ["Gandalf", "Tyrion"]
-console.log(dictionary.values()); //outputs ["gandalf@email.com", "tyrion@email.com"]
+dict.delete('John');
 
-console.log(dictionary.getItems()); //Object {Gandalf: "gandalf@email.com", Tyrion: "tyrion@email.com"}
+console.log(dict.keys()); //outputs ["Gandalf", "Tyrion"]
+console.log(dict.values()); //outputs ["gandalf@email.com", "tyrion@email.com"]
+
+console.log(dict.getItems()); //Object {Gandalf: "gandalf@email.com", Tyrion: "tyrion@email.com"}

@@ -1,4 +1,4 @@
-export default class LinkedList<T> {
+class LinkedList<T> {
     private head: null | ListNode<T>;
     private count: number;
 
